@@ -7,7 +7,31 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="overall">
+        <div>
+          <h1 class="heading">BMI Calculator</h1>
+        </div>
+        <div class="container">
+          <div class="height-container">
+              <h2>Height</h2>
+              <!-- <br> -->
+            <input type="text" id="bmi-height" placeholder="120cm"/>
+          </div>
+          <div class="weight-container">
+            <h2>Weight</h2>
+            <!-- <br /> -->
+            <input type="text" id="bmi-weight" placeholder="40kg" />
+          </div>
+          <div class="button-container">
+            <button onclick="bmiButton()">Result</button><br><button onclick="restart()">Clear</button>
+            <div class="result-block">
+              <p id="bmi-results"></p>
+              <p id="results"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <script src="/script/code.js"></script>
 </body>
 </html>
